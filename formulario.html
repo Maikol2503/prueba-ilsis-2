@@ -1,11 +1,3 @@
-<?php
-$vivienda = $_POST["casa"] ?? null;
-$negocio = $_POST["negocio"] ?? null;
-
-echo $vivienda;
-echo $negocio;
-echo "nada";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +5,11 @@ echo "nada";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <title>Document</title>
 </head>
 <body>
@@ -35,17 +31,17 @@ echo "nada";
     </header>
 
 
-    <section class="formulario">
+    <section class="formulario" >
         <div class="containerformulario">
             <!-- barra superior -->
             <div class="calculaAhora-seccionCinco">
-                <p class="p1-seccion4">Calcula online</p>
+                <!-- <p class="p1-seccion4">Calcula online</p>
                 <p class="p2-seccion4">en menos de un minuto</p>
-                <a href="formulario.html"><p class="p-seccion4">CALCULAR <img src="css/imagnes/proximo.png" alt=""></p></a> <!-- Redireccion a formulario -->
+                <a href="formulario.html"><p class="p-seccion4">CALCULAR <img src="css/imagnes/proximo.png" alt=""></p></a> -->
             </div>
 
             <!-- FORMULARIO -->
-            <div class="container-formulario">
+            <div class="container-formulario" data-aos="fade-up" data-aos-duration="1000">
                 <form action="formulario.php" method="POST" class="form">
                 
                     <!-- casa o negocio -->
@@ -146,6 +142,7 @@ echo "nada";
                     </div>
                     <!-- pagina 7 -->
                     <div class="pagina casa">
+                        <h1>¿Cuál es el código postal de la vivienda?</h1>
                         <div class="codigoPostal">
                                 <input oninvalid="" name="codigoPostal" type="number" name="codigoPostal" id="codigoPostal">
                                 <p  class="prg7">Continuar</p>
@@ -165,6 +162,7 @@ echo "nada";
                     </div>
                     <!-- pagina 9 -->
                     <div class="pagina casa">
+                        <h1>Para guardar tu proyecto de seguridad y poder recuperarlo en el futuro, necesitamos:</h1>
                         <div class="telefonoFormulario">
                             <input oninvalid="" name="telefonoFormulario" type="number" name="telefonoFormulario" id="telefonoFormulario" placeholder="Telefono">
                             <button class="prg9">Finalizar</button>
@@ -273,8 +271,9 @@ echo "nada";
                     </div>
                     <!-- pagina 6 -->
                     <div class="pagina negocio">
-                        <div class="codigoPostalNegocio">
-                            <input oninvalid="" name="codigoPostalNegocio" type="number" id="codigoPostalNegocio">
+                        <h1>¿Cuál es el código postal de tu negocio?</h1>
+                        <div class="codigoPostal">
+                            <input oninvalid="" name="codigoPostal" type="number" name="codigoPostal" id="codigoPostal">
                             <p  class="prg6">Continuar</p>
                         </div>
                     </div>
@@ -315,6 +314,7 @@ echo "nada";
                     </div>
                     <!-- pagina 9 -->
                     <div class="pagina negocio">
+                        <h1>Para guardar tu proyecto de seguridad y poder recuperarlo en el futuro, necesitamos:</h1>
                         <div class="telefonoFormulario">
                             <input oninvalid="" name="telefonoFormulario" type="number" name="telefonoFormulario" id="telefonoFormulario" placeholder="Telefono">
                             <button class="prg9">Finalizar</button>
@@ -326,7 +326,10 @@ echo "nada";
     </section>
 
 
-
     <script src="js/formulario.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
