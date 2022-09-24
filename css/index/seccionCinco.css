@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.seccionCinco{
+    padding: 80px 0;
+}
+.seccionCinco .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.div-seccionCinco{
+    display: flex;
+    justify-content: center;
+}
+.divTelefono{
+    position: relative;
+    width: 300px;
+}
+.h2-movil{
+    display: none;
+}
+.p1-movil{
+    display: none;
+}
+.h1pc{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.p1pc{
+    margin-top: 10px;
+}
+.divTelefono img{
+    position: absolute;
+}
+.div-video{
+    width: 300px;
+    height: 570px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.divTelefono video{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+.div-textoTelefono{
+    width: 60%;
+    margin-left: 50px;
+}
+.div-textoTelefono h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.div-textoTelefono h2{
+    font-size: 18px;
+    margin: 10px 0;
+    color: rgb(90, 90, 90);
+}
+
+.div-textoTelefono p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    color: rgb(66, 66, 66);
+}
+.div-t1{
+    display: flex;
+    margin: 60px 0;
+}
+
+.icono-t1{
+    width: 35px;
+    margin-right: 20px;
+    margin-top: 10px;
+    height: 35px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+
+     .seccionCinco{
+         padding: 30px 0;
+
+     }
+     .h2-movil{
+        display: block;
+        margin:0 10px 20px 10px;
+        font-size: 28px;
+        font-weight: 600;
+        color: rgb(56, 56, 56);
+    }
+    .p1-movil{
+        display: block;
+        margin:10px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        color: rgb(97, 97, 97);
+    }
+    .h1pc{
+        display: none;
+    }
+    .p1pc{
+        display: none;
+    }
+    .div-seccionCinco{
+        flex-direction: column;
+    }
+
+    .divTelefono{
+        margin-top: 40px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .div-textoTelefono .h1{
+        display: none;
+    }
+
+    .div-textoTelefono{
+        width: 100%;
+        margin: 0 ;
+    }
+
+    .icono-t1{
+        margin-left: 10px;
+    }
+
+    .div-t2{
+        margin-right: 10px;
+    }
+
+
+
+
+
+   
+}

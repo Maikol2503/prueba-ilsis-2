@@ -1,0 +1,332 @@
+<?php
+$vivienda = $_POST["casa"] ?? null;
+$negocio = $_POST["negocio"] ?? null;
+
+echo $vivienda;
+echo $negocio;
+echo "nada";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario/formulario.css">
+    <link rel="stylesheet" href="css/index/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <a target="_blank" href="https://wa.me/+593986203834"><img class="iconoWhatsapp" src="css/imagnes/whatsapp.png" alt="icono de whatsapp color verde. al hacer click te redirecciona al whatsapp"></a>
+    <header class="header">
+        <nav class="nav">
+            <ul class="ul-nav">
+                <a href="index.html"><div class="logo">LOGO</div></a>
+                <div class="div-calculaAhora">
+                    <p>Calcula online en menos de un minuto</p>
+                    <li class="calcularAhora">CALCULA AHORA* <img src="css/imagnes/proximo.png" alt="" class="flecha-calcularAhora"></li>
+                </div>
+            </ul>
+        </nav>  
+        <div class="header-movil">
+            <a href="index.html"><p class="logo">LOGO</p></a>
+            <a href="tel:+593986203834"><div class="llamar"><img src="css/imagnes/telefono.png" alt=""><p>LLAMAR</p></div></a>
+        </div>
+    </header>
+
+
+    <section class="formulario">
+        <div class="containerformulario">
+            <!-- barra superior -->
+            <div class="calculaAhora-seccionCinco">
+                <p class="p1-seccion4">Calcula online</p>
+                <p class="p2-seccion4">en menos de un minuto</p>
+                <a href="formulario.html"><p class="p-seccion4">CALCULAR <img src="css/imagnes/proximo.png" alt=""></p></a> <!-- Redireccion a formulario -->
+            </div>
+
+            <!-- FORMULARIO -->
+            <div class="container-formulario">
+                <form action="formulario.php" method="POST" class="form">
+                
+                    <!-- casa o negocio -->
+                    <!-- pagina 0 -->
+                    <div class="pagina principal">
+                        <h1>¿La alarma es para una vivienda o un negocio?</h1>
+                        <div class="check">
+                            <label for="Casa" class="prg0">Casa <p class="flecha1">></p></label>
+                            <input name="casaPrincipal" id="Casa" class="prg0" type="radio" value="Casa">
+                        </div>
+
+                        <div class="check">
+                            <label for="Negocio" class="prg0">Negocio <p class="flecha1">></p></label>
+                            <input name="negocioPrincipal" id="Negocio" class="prg0" type="radio" value="Negocio">
+                        </div>
+                    </div>
+
+                    <!-- CASA -->
+                    <!-- pagina 1 -->
+                    <div class="pagina casa">
+                        <h1>¿como es tu vivienda?</h1>
+                        <div class="check">
+                            <label for="botonDepartamento" class="prg1">Departamento <p class="flecha1">></p></label>
+                            <input name="departamento" id="botonDepartamento" class="prg1" type="radio" value="Departamento">
+                        </div>
+                        <div class="check">
+                            <label for="botonCasa" class="prg1">Casa <p class="flecha1">></p></label>
+                            <input name="casa" id="botonCasa" class="prg1" type="radio" value="Casa">
+                        </div>
+                    </div>
+                    <!-- pagina 2 -->
+                    <div class="pagina casa">
+                        <h1>¿Es tu vivienda habitual o segunda vivienda?</h1>
+                        <div class="check">
+                            <label for="botonHabitual" class="prg2">Vivienda habitual <p class="flecha1">></p></label>
+                            <input name="viviendaHabitual" id="botonHabitual" class="prg2" type="radio" value="Vivenda Habitual">
+                        </div>
+                        <div class="check">
+                            <label for="botonSegunda" class="prg2">Segunda Vivienda <p class="flecha1">></p></label>
+                            <input name="segundaVivienda" id="botonSegunda" class="prg2" type="radio" value="Segunda Vivienda">
+                        </div>
+                    </div>
+                    <!-- pagina 3 -->
+                    <div class="pagina casa">
+                        <h1>¿Dónde se encuentra la vivienda?</h1>
+                        <div class="check">
+                            <label for="botonDentro" class="prg3">Dentro del núcleo urbano <p class="flecha1">></p></label>
+                            <input name="dentroNucleoHurbano" id="botonDentro" class="prg3" type="radio" value="Dentro del núcleo urbano">
+                        </div>
+                        <div class="check">
+                            <label for="botonFuera"  class="prg3">Fuera del núcleo urbano <p class="flecha1">></p></label>
+                            <input name="fueraNucleoHurbano" id="botonFuera"  class="prg3" type="radio" value="Fuera del núcleo urbano">
+                        </div>
+                    </div>
+                    <!-- pagina 4 -->
+                    <div class="pagina casa">
+                        <h1>¿Cómo es el acceso principal de la vivienda?</h1>
+                        <div class="check">
+                            <label for="botonPieCalle"  class="prg4">Portal a pie de calle <p class="flecha1">></p></label>
+                            <input name="pieDeCalle" id="botonPieCalle"  class="prg4" type="radio" value="Portal a pie de calle">
+                        </div>
+                        <div class="check">
+                            <label for="botonNoVigilada"  class="prg4">Urbanizacion no vigilada <p class="flecha1">></p></label>
+                            <input name="noVigilada" id="botonNoVigilada"  class="prg4" type="radio" value="Urbanizacion no vigilada">
+                        </div>
+                        <div class="check">
+                            <label for="botonVigilada"  class="prg4">Hurbanizacion no vigilada <p class="flecha1">></p></label>
+                            <input name="vigilada" id="botonVigilada"  class="prg4" type="radio" value="Hurbanizacion no vigilada">
+                        </div>
+                    </div>
+                    <!-- pagina 5 -->
+                    <div class="pagina casa">
+                        <h1>¿La vivienda tiene accesos secundarios?</h1>
+                        <div class="check">
+                            <label for="botonJardin"  class="prg5">Jardín o parcela <p class="flecha1">></p></label>
+                            <input name="jardinParcela" id="botonJardin"  class="prg5" type="radio" value="Jardín o parcela">
+                        </div>
+                        <div class="check">
+                            <label for="botonBalcon"  class="prg5">Balcón o terrasa <p class="flecha1">></p></label>
+                            <input name="balconTerrasa" id="botonBalcon"  class="prg5" type="radio" value="Balcón o terrasa">
+                        </div>
+                        <div class="check">
+                            <label for="noTiene"  class="prg5">No tiene <p class="flecha1">></p></label>
+                            <input name="noTiene" id="noTiene"  class="prg5" type="radio" value="No tiene">
+                        </div>
+                    </div>
+                    <!-- pagina 6 -->
+                    <div class="pagina casa">
+                        <h1>¿Las ventanas de tu vivienda tienen rejas?</h1>
+                        <div class="check">
+                            <label for="si"  class="prg6">Si <p class="flecha1">></p></label>
+                            <input name="si" id="si"  class="prg6" type="radio" value="Si">
+                        </div>
+                        <div class="check">
+                            <label for="no"  class="prg6">No <p class="flecha1">></p></label>
+                            <input name="no" id="no"  class="prg6" type="radio" value="No">
+                        </div>
+                    </div>
+                    <!-- pagina 7 -->
+                    <div class="pagina casa">
+                        <div class="codigoPostal">
+                                <input oninvalid="" name="codigoPostal" type="number" name="codigoPostal" id="codigoPostal">
+                                <p  class="prg7">Continuar</p>
+                        </div>
+                    </div>
+                    <!-- pagina 8 -->
+                    <div class="pagina casa">
+                        <h1>¿Han robado con anterioridad en tu vivienda o a tus vecinos?</h1>
+                        <div class="check">
+                            <label for="siHanRobado"  class="prg8">Si <p class="flecha1">></p></label>
+                            <input name="siHanRobado" id="siHanRobado"  class="prg8" type="radio" value="SiHanRobado">
+                        </div>
+                        <div class="check">
+                            <label for="noHanRobado"  class="prg8">No <p class="flecha1">></p></label>
+                            <input name="noHanRobado" id="noHanRobado"  class="prg8" type="radio" value="NoHanRobado">
+                        </div>
+                    </div>
+                    <!-- pagina 9 -->
+                    <div class="pagina casa">
+                        <div class="telefonoFormulario">
+                            <input oninvalid="" name="telefonoFormulario" type="number" name="telefonoFormulario" id="telefonoFormulario" placeholder="Telefono">
+                            <button class="prg9">Finalizar</button>
+                        </div>
+                    </div>
+
+ 
+                    <!-- NEGOCIO -->
+                    <!-- pagina 1 -->
+                    <div class="pagina negocio">
+                        <h1>¿Cómo es tu negocio?</h1>
+                        <div class="check">
+                            <label for="PieDeCalle" class="prg1">Negocio a pie de calle <p class="flecha1">></p></label>
+                            <input name="NegocioPieDeCalle" id="PieDeCalle" class="prg1" type="radio" value="Negocio a pie de calle">
+                        </div>
+
+                        <div class="check">
+                            <label for="centroComercial" class="prg1">Local en centro comercial <p class="flecha1">></p></label>
+                            <input name="centroComercial" id="CentroComercial" class="prg1" type="radio" value="Local en centro comercial">
+                        </div>
+
+                        <div class="check">
+                            <label for="edificioEmpresarial" class="prg1">Oficina en edificio empresarial <p class="flecha1">></p></label>
+                            <input name="edificioEmpresarial" id="edificioEmpresarial" class="prg1" type="radio" value="Oficina en edificio empresarial">
+                        </div>
+                    </div>
+                    <!-- pagina 2 -->
+                    <div class="pagina negocio">
+                        <h1>¿Dónde se encuentra el negocio?</h1>
+                        <div class="check">
+                            <label for="negocioDentroNucleoHurbano" class="prg2">Dentro del nucleo hurbano <p class="flecha1">></p></label>
+                            <input name="negocioDentroNucleoHurbano" id="negocioDentroNucleoHurbano" class="prg2" type="radio" value="Dentro del nucleo hurbano">
+                        </div>
+
+                        <div class="check">
+                            <label for="negocioFueraNucleoHurbano" class="prg2">Fuera del nucleo hurbano <p class="flecha1">></p></label>
+                            <input name="negocioFueraNucleoHurbano" id="negocioFueraNucleoHurbano" class="prg2" type="radio" value="Fuera del nucleo hurbano">
+                        </div>
+                    </div>
+                    <!-- pagina 3 -->
+                    <div class="pagina negocio">
+                        <h1>¿Cuántos empleados tiene?</h1>
+                        <div class="check">
+                            <label for="soloyo" class="prg3">Solo yo <p class="flecha1">></p></label>
+                            <input name="soloyo" id="soloyo" class="prg3" type="radio" value="Solo yo">
+                        </div>
+
+                        <div class="check">
+                            <label for="2a5" class="prg3">De 2 a 5 <p class="flecha1">></p></label>
+                            <input name="2a5" id="2a5" class="prg3" type="radio" value="De 2 a 5">
+                        </div>
+
+                        <div class="check">
+                            <label for="masDe5" class="prg3">Mas de 5 <p class="flecha1">></p></label>
+                            <input name="masDe5" id="masDe5" class="prg3" type="radio" value="Mas de 5">
+                        </div>
+                    </div>
+
+                    <!-- pagina 4 -->
+                    <div class="pagina negocio">
+                        <h1>¿Que horarios tiene tu negocio?</h1>
+                        <div class="check">
+                            <label for="mananas" class="prg4">Solo mañanas <p class="flecha1">></p></label>
+                            <input name="mananas" id="mananas" class="prg4" type="radio" value="Solo mañanas">
+                        </div>
+
+                        <div class="check">
+                            <label for="tardes" class="prg4">Solo tardes <p class="flecha1">></p></label>
+                            <input name="tardes" id="tardes" class="prg4" type="radio" value="Solo tardes">
+                        </div>
+
+                        <div class="check">
+                            <label for="mananasTardes" class="prg4">Mañanas y tardes <p class="flecha1">></p></label>
+                            <input name="mananasTardes" id="mananasTardes" class="prg4" type="radio" value="Mañanas y tardes">
+                        </div>
+
+                        <div class="check">
+                            <label for="nocturnos" class="prg4">Nocturnos <p class="flecha1">></p></label>
+                            <input name="nocturnos" id="nocturnos" class="prg4" type="radio" value="Nocturnos">
+                        </div>
+
+                        <div class="check">
+                            <label for="24 horas" class="prg4">24 horas <p class="flecha1">></p></label>
+                            <input name="24 horas" id="24 horas" class="prg4" type="radio" value="24 horas">
+                        </div>
+
+                    </div>
+
+                    <!-- pagina 5 -->
+                    <div class="pagina negocio">
+                        <h1>¿Qué tipo de mercancía tienes en tu negocio?</h1>
+                        <div class="check">
+                            <label for="gran" class="prg5">Gran valor <p class="flecha1">></p></label>
+                            <input name="gran" id="gran" class="prg5" type="radio" value="Gran valor">
+                        </div>
+
+                        <div class="check">
+                            <label for="medioValor" class="prg5">Medio valor <p class="flecha1">></p></label>
+                            <input name="medioValor" id="medioValor" class="prg5" type="radio" value="Medio valor">
+                        </div>
+
+                        <div class="check">
+                            <label for="bajoValor" class="prg5">Bajo valor <p class="flecha1">></p></label>
+                            <input name="bajoValor" id="bajoValor" class="prg5" type="radio" value="Bajo valor">
+                        </div>
+                    </div>
+                    <!-- pagina 6 -->
+                    <div class="pagina negocio">
+                        <div class="codigoPostalNegocio">
+                            <input oninvalid="" name="codigoPostalNegocio" type="number" id="codigoPostalNegocio">
+                            <p  class="prg6">Continuar</p>
+                        </div>
+                    </div>
+                    <!-- pagina 7 -->
+                    <div class="pagina negocio">
+                        <h1>¿Han robado con anterioridad en tu negocio o a negocios cercanos?</h1>
+                        <div class="check">
+                            <label for="siHanRobado"  class="prg7">Si <p class="flecha1">></p></label>
+                            <input name="siHanRobado" id="siHanRobado"  class="prg7" type="radio" value="SiHanRobado">
+                        </div>
+                        <div class="check">
+                            <label for="noHanRobadoNegocio"  class="prg7">No <p class="flecha1">></p></label>
+                            <input name="noHanRobadoNegocio" id="noHanRobadoNegocio"  class="prg7" type="radio" value="NoHanRobado">
+                        </div>
+                    </div>
+                    <!-- pagina 8 -->
+                    <div class="pagina negocio">
+                        <h1>¿Cuándo quieres realizar el trabajo?</h1>
+                        <div class="check">
+                            <label for="antesPosible" class="prg8">Lo antes posible <p class="flecha1">></p></label>
+                            <input name="antesPosible" id="antesPosible" class="prg8" type="radio" value="Lo antes posible">
+                        </div>
+
+                        <div class="check">
+                            <label for="1a3Meses" class="prg8">De 1 a 3 meses <p class="flecha1">></p></label>
+                            <input name="1a3Meses" id="1a3Meses" class="prg8" type="radio" value="De 1 a 3 meses">
+                        </div>
+
+                        <div class="check">
+                            <label for="3meses" class="prg8">Mas de 3 meses <p class="flecha1">></p></label>
+                            <input name="3meses" id="3meses" class="prg8" type="radio" value="Mas de 3 meses">
+                        </div>
+
+                        <div class="check">
+                            <label for="noLoSe" class="prg8">De momento no tengo pensado hacerlo <p class="flecha1">></p></label>
+                            <input name="noLoSe" id="noLoSe" class="prg8" type="radio" value="De momento no tengo pensado hacerlo">
+                        </div>
+                    </div>
+                    <!-- pagina 9 -->
+                    <div class="pagina negocio">
+                        <div class="telefonoFormulario">
+                            <input oninvalid="" name="telefonoFormulario" type="number" name="telefonoFormulario" id="telefonoFormulario" placeholder="Telefono">
+                            <button class="prg9">Finalizar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/formulario.js"></script>
+</body>
+</html>

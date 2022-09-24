@@ -1,0 +1,263 @@
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.seccionSeis h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+.slide-contenedor{
+    background-color: rgb(71, 71, 71);
+    max-width:100%;
+    max-height: 100vh;
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.miSlider{
+    position: relative;
+}
+
+.miSlider img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.carta-seccionSeis{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 300px;
+    border-radius: 20px;
+    top: 50px;
+    text-align: center;
+    right: 170px;
+    z-index: 900;
+    transition: .5s
+}
+
+.h4-movil{
+    display: none;
+    position: absolute;
+}
+.carta-seccionSeis h2{
+   font-size: 30px;
+   color: rgb(66, 66, 66);
+
+}
+
+.carta-seccionSeis p{
+    color: rgb(105, 105, 105);
+    line-height: 25px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.direcciones{
+    width: 98%;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.direcciones a{
+    color: rgb(255, 0, 64);
+    display: inline-block;
+    padding: 2px 5px;
+    font-size: 50px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.direcciones a:hover{
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;
+    width: 100%;
+    transition: 1s;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.781);
+    padding: 30px 30px 20px 30px;
+}
+
+.barra{
+    transition: .3s;
+    cursor: pointer;
+    height:auto;
+    /* width: 60px; */
+    margin: 0 2px;
+    /* background: #dcdde1; */
+    display: inline-block;
+    margin-left: 3px;
+    font-size: 18px;
+    margin: 0 20px;
+}
+
+.barra p{
+    color: rgb(37, 37, 37);
+    margin: 0;
+    padding: 0;
+}
+.active1{
+  border-bottom: 2px solid #f03;
+  padding-bottom: 0px;
+  font-weight: 600;
+  scale: 1;
+  margin-top: -15px;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1s;    
+}
+
+@keyframes fade {
+    from {opacity: .6;}
+    to{opacity:1;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+
+    .slide-contenedor{
+        height: 400px;
+        /* margin-bottom: 100px; */
+    }
+    .miSlider img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .seccionSeis h1{
+        font-weight: 500;
+        font-size: 28px;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+        margin-bottom: 30px;
+        color: rgb(43, 43, 43);
+    }
+    .direcciones{
+        height: 60px;
+       position: absolute;
+       top: 0;
+       width: 100%;
+       padding: 0 3px;
+       z-index: 940;
+    }
+
+    .h4-movil{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        line-height: 60px;
+        padding-bottom: 5px;
+        color: white;
+        font-size: 25px;
+         text-align: center;
+        align-items: center; 
+        height: 60px;
+        left: 0;
+        z-index: 930;
+        background-color: rgba(0, 0, 0, 0.24);
+    }
+    .h1-movil{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .direcciones a{
+        top: 0;
+        padding: 7px 10px;
+        font-size: 30px;
+    }
+    .barras{
+        display: none;
+    }
+    .carta-seccionSeis {
+        top: auto;
+        border-radius: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: rgba(240, 248, 255, 0.637);
+    }
+
+    .carta-seccionSeis h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .carta-seccionSeis p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 10px;
+        color: rgb(51, 51, 51);
+    }
+
+
+
+}

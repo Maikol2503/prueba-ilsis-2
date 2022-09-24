@@ -1,0 +1,52 @@
+:root{
+    --tema:rgb(255, 0, 21);
+}
+
+
+.seccionUno{
+    background-image: url("../imagnes/camaras.png");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+
+}
+.texto-introductorio{
+    width: 50%;
+}
+.texto-introductorio h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 700;
+    
+}
+.texto-introductorio p{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+    .seccionUno{
+        background-image: url("../imagnes/fondo1comprimido.png");
+    margin-top: 80px;
+    background-position: -108px;
+    height: 250px;
+    }   
+}

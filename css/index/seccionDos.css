@@ -1,0 +1,275 @@
+:root{
+    --tema:#f03;
+    --pcolor:#5a5a5a;
+}
+
+.seccionDos{
+    position: relative;
+}
+
+.texto-uno{
+    background-color: #d7d2cb;
+    height: 80px;
+    padding-right: 550px;
+    padding-left: 20px;
+    color: var(--tema);
+    line-height: 80px;
+}
+.texto-uno h1{
+    color: var(--tema);
+    text-align: end;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.texto-dos{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #ffffff;
+    padding-right: 550px;
+    height: 80px;
+    padding-left: 20px;
+    line-height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.texto-dos h1{
+    color: rgb(51, 51, 51);
+    font-size: 30px;
+    text-align: end;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 37px;
+}
+
+.container-somos{
+    width: 100%;
+    text-align: center;
+    width: 60%;
+    margin: 90px auto 0 auto;
+    max-width: 1400px;
+}
+
+
+.imagen-introductoria{
+    width: 100%;
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+} .imagen-introductoria img{
+    width: 600px;
+}
+
+.titulo-somos{
+    font-size: 50px;
+    color: #313131;
+    margin-bottom: 20px;
+    padding: 0 20px;
+} 
+.p-somos{
+    line-height: 30px;
+    font-weight: 300;
+    color: var(--pcolor);
+    font-size: 18px;
+}
+
+
+
+
+
+
+/* FORMULARIO */
+
+.formularioUno{
+    position: absolute;
+    background-image: linear-gradient( rgba(255, 255, 255, 0)-200px , rgb(255, 255, 255)55%);
+    top: -190px;
+    right: 100px;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 0;
+    border-radius: 45px 0 0 0;
+    z-index: 100;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.formularioUno-divUno{
+    width: 100%;
+    text-align: center;
+} .formularioUno-divUno p{
+    font-size: 14px ;
+    font-weight: 600;
+    color: #585858;
+    margin-top: 10px;
+} .formularioUno-divUno h1{
+    letter-spacing: 1px;
+}
+
+.formularioUno-divDos{
+    background-color: var(--tema);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    line-height: 80px;
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    height: 90px;
+    border-radius: 0 50px 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+    margin-left: -15px;
+    transition: .5s;
+    position: relative;
+} .formularioUno-divDos p{
+    color: white;
+    display: flex;
+    align-items: center;
+} .formularioUno-divDos img{
+    width: 50px;
+} .formularioUno-divDos:hover{
+    width: 104%;
+    transition: .5s;
+}
+
+.formularioUno-divDos::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0px;
+    height: 0px;
+    left: 1px;
+    bottom: -8px;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #ab192d;
+    border-right: 10px solid transparent;
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: all .5s ease .3s;
+}
+
+
+.formularioUno-divTres{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+
+.divImput{
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 40px;
+} .divImput input{
+    padding-left: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    outline: 1px;
+} .divImput input:focus{
+    border: none;
+}
+.p-enviar{
+   height: 100%;
+   width: 40%;
+   padding-left: 10px;
+   background-color: var(--tema);
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 16px;
+   color: white;
+   position: absolute;
+   right: 0;
+   transition: .5s;
+   top: 0;
+   
+} .p-enviar:hover{
+    width:  45%;
+    transition: .5s;
+    
+} .p-enviar img{
+    width: 25px;
+    margin-left: 10px;
+    
+}
+.gratis{
+    font-weight: 400;
+}
+.p-telefono{
+    font-weight: 400;
+}
+.telefono{
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+
+  .seccionDos{
+      flex-direction: column-reverse;
+      display: flex;
+  }
+
+.container-somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin: 0px 0px;
+    padding: 10px;
+    text-align: center;
+} .container-somos h1{
+    font-size: 35px;
+}
+ .texto-uno, .texto-dos{
+    display: none;
+   }  
+/* //formulario */
+
+.formularioUno{
+    position: relative;
+   width: 100%;
+   max-width: 100%;
+   top: -34px;
+   left: 0;
+   background-color: #f3f3f3;
+}
+
+
+    
+}

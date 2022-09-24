@@ -1,0 +1,185 @@
+:root{
+    --tema:#f03;
+    --pcolor:#5a5a5a;
+    --gren:#6fffcf;
+    --blue:#94adff;
+    --orange:#ffb875;
+}
+.seccionCuatro{
+    padding: 80px 0;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.imagenes-seccion4{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.texto-seccion4{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border-bottom: 2px solid rgb(175, 175, 175);
+    padding-bottom: 40px;
+} .texto-seccion4 h1{
+    margin-bottom: 30px;
+    line-height: 50px;
+    font-size: 30px;
+}
+.texto-seccion4 p{
+    font-size: 20px;
+    line-height: 30px;
+    color: #696969;
+}
+.iconos{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iconos-row{
+    display: flex;
+}
+.iconos-img{
+    text-align: center;
+    width: 29%;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 35px 25px 0;
+    align-items: center;
+    /* justify-content: center; */
+} .iconos-img p{
+    margin-top: 10px;
+    color: #696969;
+    font-weight: 300;
+    font-size: 18px;
+} .iconos-img img{
+    width: 50px;
+}
+.imagenGrande-movil{
+    display: none;
+}
+.imagenGrande-seccion4{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} .imagenGrande-seccion4 img{
+  height: 400px;
+
+
+}
+
+/* .calculaAhora-seccion4{
+    display: none;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:550px){
+.seccionCuatro{
+    padding: 40px 0 0 0;
+    margin-bottom: 40px;
+}
+.imagenes-seccion4{
+    flex-direction: column;
+}
+.iconos{
+    width: 100%;
+    align-items: center;
+}
+.iconos-row{
+    justify-content: space-between;
+    margin: 0;
+}
+
+.iconos-img{
+    margin: 0;
+}
+.texto-seccion4{
+    /* text-align: center; */
+    width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    margin-bottom: 40px;
+} .texto-seccion4 h1{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 40px;
+} .texto-seccion4 {
+    font-size: 25px;
+    line-height: 16px;
+    font-weight: 300;
+}
+.imagenGrande-seccion4{
+    display: none;
+}
+.imagenGrande-movil{
+    margin-bottom: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+} .imagenGrande-movil img{
+    width: 290px;
+    height: 290px;
+}
+
+.iconos-row{
+    padding: 0 10px;
+    margin: 20px 0;
+}
+/* .calculaAhora-seccion4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 20px 0;
+    background-color: #f03;
+}  */
+
+
+.flechaC{
+    padding: 0 7px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+} 
+
+
+}

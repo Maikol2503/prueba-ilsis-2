@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
+    <title>index</title>
+</head>
+<body>
+
+    <a target="_blank" href="https://wa.me/+593986203834"><img class="iconoWhatsapp" src="../css/imagnes/whatsapp.png" alt="icono de whatsapp color verde. al hacer click te redirecciona al whatsapp"></a>
+
+    <header class="header">
+        <nav class="nav">
+            <ul class="ul-nav">
+                <li class="logo">LOGO</li>
+                <div class="div-calculaAhora">
+                    <p>Calcula online en menos de un minuto</p>
+                    <li class="calcularAhora">CALCULA AHORA* <img src="../css/imagnes/proximo.png" alt="" class="flecha-calcularAhora"></li>
+                </div>
+            </ul>
+        </nav>  
+        <div class="header-movil">
+            <div class="logo">LOGO</div>
+            <div class="llamar"><img src="../css/imagnes/telefono.png" alt=""><p>LLAMAR</p></div>
+        </div>
+    </header>
+
+    <section class="seccionUno">
+    <!-- --AQUI HAY UNA IMAGEN DE FONDO--- -->
+    </section>
+    
+    <section class="seccionDos">
+        <div class="texto-uno">
+            <h1>El mejor precio</h1>
+        </div>
+        <div class="texto-dos">
+            <h1>Vigilancia 24/7 con ILSIS SECURITY</h1>
+        </div>
+        <div class="container-somos">
+           <h1 class="titulo-somos">Protege tu hogar con la tecnología más avanzada</h1>
+           <p class="p-somos">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam illum veritatis facilis! Asperiores sunt totam dolorem. Optio nobis assumenda ipsum modi blanditiis id adipisci quia ad rerum hic, tenetur ipsa.</p>
+        </div>
+        <div class="formularioUno">
+            <div class="formularioUno-divUno">
+                <h1>Calcula Online</h1>
+                <p>en menos de un minuto</p>
+            </div>
+            <div class="formularioUno-divDos">
+                <a href="#"><p>CALCULA AHORA <img src="../css/imagnes/proximo.png" alt="" class="flecha-calcularAhora"></p></a>
+            </div>
+            <div class="formularioUno-divTres">
+                <p class="gratis">si lo prefieres <b>te llamamos gratis</b></p>
+                    <form action="" method="POST">
+                        <div class="divImput"><input type="text" name="telefono1" placeholder="Tu teléfono"><p class="p-enviar">ENVIAR<img src="../css/imagnes/proximo.png" alt=""></p></div>
+                    </form>
+                <p class="p-telefono">o llama GRATIS al <span class="telefono">123456789</span> </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="seccionTres">
+        <span class="botones">
+            <img class="i" src="../css/imagnes/d.png" alt="">
+            <img  class="d"src="../css/imagnes/i.png" alt="">
+        </span>
+        <div class="cartas">
+            <a href="#camaras">
+                <div class="carta cartaPrimera camara">
+                    <img src="../css/imagnes/camara4.jpg" alt="">
+                    <h1>Cámaras de seguridad</h1>
+                   
+                </div>
+            </a>
+            <a href="#">
+                <div class="carta orange">
+                    <img src="../css/imagnes/cerca1.jpeg" alt="">
+                    <h1>Cercado electrico</h1>
+                   
+                </div>
+            </a>
+            <a href="">
+                <div class="carta blue">
+                    <img src="../css/imagnes/videoporteros1.jpg" alt="">
+                    <h1>Video porteros</h1>
+                  
+                </div>
+            </a>
+            <a href="">
+                <div class="carta gren cartaUltima">
+                    <img src="../css/imagnes/electrico1.jpg" alt="">
+                    <h1>intalaciones electricas</h1>
+                   
+                </div>
+            </a>
+        </div>
+        <div class="indicadores"></div>
+    </section>
+
+    <section id="camaras" class="seccionCuatro">
+        <div class="container">
+            <div class="seccion4-container1">
+                <div class="imagenes-seccion4">
+                
+                    <div class="iconos">
+                        <div class="texto-seccion4">
+                            <h1>Tecnología de videovigilancia avanzada para tu seguridad</h1>
+                            <p>Controla tu hogar dentro y fuera con imágenes Full HD y evita una intrusión actuando de inmediato</p>
+                        </div>
+                        <div class="imagenGrande-movil">
+                            <img src="../css/imagnes/arlo1.png" alt="">
+                        </div>
+                         <div class="iconos-row">
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/1.jpg" alt=""> -->
+                                <img src="../css/imagnes/hd.webp" alt="">
+                                <p>Resolución Full HD 1080p</p>
+                            </div>
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/2.jpg" alt=""> -->
+                                <img src="../css/imagnes/noche.webp" alt="">
+                                <p>Visión nocturna en color</p>
+                            </div>
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/4.jpg" alt=""> -->
+                                <img src="../css/imagnes/angular.webp" alt="">
+                                <p>Ángulo de visión 130º</p>
+                            </div>
+                        </div>
+                        <div class="iconos-row">
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/3.jpg" alt=""> -->
+                                <img src="../css/imagnes/resistente.webp" alt="">
+                                <p>Resistente a la intemperie: certificación IP65</p>
+                            </div>
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/5.jpg" alt=""> -->
+                                <img src="../css/imagnes/audio.webp" alt="">
+                                <p>Audio bidireccional de alta calidad</p>
+                            </div>
+                            <div class="iconos-img">
+                                <!-- <img src="../css/imagnes/6.jpg" alt=""> -->
+                                <img src="../css/imagnes/zoom.webp" alt="">
+                                <p>Zoom digital x12</p>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="imagenGrande-seccion4">
+                        <img src="../css/imagnes/arlo1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccionCinco">
+        <div class="container">
+            <div class="div-seccionCinco">
+                <h1 class="h1-movil">La protección de tu hogar más segura</h1>
+                <div class="divTelefono">
+                    <img src="../css/imagnes/marcoIphone.png" alt="">
+                    <div class="div-video">
+                        <video src="../css/imagnes/video.mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></video>
+                    </div>
+                </div>
+                <div class="div-textoTelefono">
+                    <h1 class="h1">La protección de tu hogar más segura</h1>
+                    <div class="div-t1">
+                        <img class="icono-t1" src="../css/imagnes/ve.jpg" alt="">
+                        <div class="div-t2">
+                            <h2>Ve y escucha lo que ocurre en cualquier momento</h2>
+                            <p>Podrás consultar en directo imágenes y vídeo con audio bidireccional (habla-escucha), para que no te pierdas nada mientras estás fuera</p>
+                        </div>
+                    </div>
+                    <div class="div-t1">
+                        <img class="icono-t1" src="../css/imagnes/nube.png" alt="">
+                        <div class="div-t2">
+                            <h2>Almacenamiento seguro </h2>
+                            <p>Gestiona tus grabaciones de forma segura: Descarga, comparte… hasta 30 días</p>
+                        </div>
+                    </div>
+                    <div class="div-t1">
+                        <img class="icono-t1" src="../css/imagnes/iphone.png" alt="">
+                        <div class="div-t2">
+                            <h2>Recibe notificaciones en tiempo real</h2>
+                            <p>Si tu cámara detecta actividad, lo sabrás al instante</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="calculaAhora-seccionCinco">
+            <p class="p1-seccion4">Calcula online</p>
+            <p class="p2-seccion4">en menos de un minuto</p>
+           <p class="p-seccion4">CALCULA AHORA <span class="flechaC">></span></p>
+        </div>
+    </section>
+
+    <section class="seccionSeis">
+        <h1>Pase lo que pase en tu hogar, no te pierdas nada con tu cámara de seguridad</h1>
+        <div class="container">
+                <div class="container-seccionSeis">
+                    <div class="slide-contenedor">
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Mascotas</p>
+                            <img src="../css/imagnes/mascotas.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Camaras Para Mascotas</h2>
+                                <p>Echa un vistazo a tu mascota siempre que quieras: ¡háblale cuando no estés en casa y escucha sus movimientos!</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Niños</p>
+                            <img src="../css/imagnes/ninos.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Cámara para niños</h2>
+                                <p>Visualiza que los pequeños de la casa están bien en cualquier momento y utiliza el habla/escucha para estar en contacto con ellos.</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Personas Mayores</p>
+                            <img src="../css/imagnes/mayores.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Cámara para personas mayores</h2>
+                                <p>Tranquilidad absoluta gracias a supervisar que los mayores estén bien, sobre todo si tienen un estado de salud delicado.</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Repartidores</p>
+                            <img src="../css/imagnes/repartidor.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Cámara para Repartidores</h2>
+                                <p>¿Estás esperando un paquete y no estás en casa? Vigila qué pasa cuando el repartidor esté llegando a tu puerta.</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Garaje</p>
+                            <img src="../css/imagnes/garaje.webp" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Cámara para garaje</h2>
+                                <p>Conéctate a tu cámara del garaje siempre que quieras para ver que tu coche, moto, bicicletas… estén intactos.</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Hogar</p>
+                            <img src="../css/imagnes/hogar.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2> Cámara para empleados hogar</h2>
+                                <p>Controla cuándo entran y salen de casa y lo que hacen cuando tú no estás.</p>
+                            </div>
+                        </div>
+                        <div class="miSlider fade">
+                            <p class="h4-movil">Jardin</p>
+                            <img src="../css/imagnes/jardin.jpg" alt="">
+                            <div class="carta-seccionSeis">
+                                <h2>Cámara para jardín</h2>
+                                <p>Instalamos tu cámara donde lo necesites... ¡Resistente a todo tipo de climas!</p>
+                            </div>
+                        </div>
+                       
+                        <div class="direcciones">
+                            <a class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                            <a class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+                        </div>
+                        <div class="barras">
+                            <div class="barra active" onclick="posicionSlide(1)">
+                                <p>Mascota</p>
+                            </div>
+                            <div class="barra" onclick="posicionSlide(2)">
+                                <p> Niños</p>
+                            </div>
+                            <div class="barra" onclick="posicionSlide(3)">
+                                <p>Personas mayores</p>
+                            </div>
+                            <div class="barra" onclick="posicionSlide(4)">
+                                <p>Repartidos</p> 
+                            </div>
+                            <div class="barra" onclick="posicionSlide(5)">
+                                <p>Garaje</p>
+                            </div>
+                            <div class="barra" onclick="posicionSlide(6)">
+                                <p>Empleados Hogar</p> 
+                            </div>
+                            <div class="barra" onclick="posicionSlide(6)">
+                                <p>Jardin</p> 
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+
+    </section>
+
+    <!-- <section class="seccionSiete">
+    </section> -->
+
+    <footer class="footer">
+        <h1>Visita Nuestras Redes Sociales</h1>
+        <div class="iconos-RedesSociales">
+            <img src="../css/imagnes/facebook.png" alt="">
+            <img src="../css/imagnes/instagram.png" alt="">
+         </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+</body>
+</html>
